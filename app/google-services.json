@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148360494395",
+    "project_id": "pam-140-6c35c",
+    "storage_bucket": "pam-140-6c35c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148360494395:android:91507f3df357f581590b1e",
+        "android_client_info": {
+          "package_name": "com.example.praktikum15"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMqd9wJMxFo1KcgNyM_oNU4Ho42uGukcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
