@@ -11,6 +11,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.praktikum15.ui.viewmodel.FormState
 import com.example.praktikum15.ui.viewmodel.InsertViewModel
 import com.example.praktikum15.ui.viewmodel.PenyediaViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -33,4 +34,7 @@ fun InsertMhsView(
                 coroutineScope.launch {
                     snackbarHostState.showSnackbar(uiState.message)
                 }
+                delay(700)
+                onNavigate()
+                viewModel.resetSnackBarMessage()
 }
