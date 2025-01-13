@@ -76,3 +76,17 @@ data class FormErrorState(
     val alamat: String? = null,
     val kelas: String? = null,
     val angkatan: String? = null,
+){
+    fun isValid():Boolean{
+        return nim == null && nama == null && gender == null
+                && alamat == null && kelas == null && angkatan == null
+    }
+}
+data class MahasiswaEvent(
+    val nim: String = "",
+    val nama: String = "",
+    val gender: String = "",
+    val alamat: String = "",
+    val kelas: String = "",
+    val angkatan: String = ""
+)
