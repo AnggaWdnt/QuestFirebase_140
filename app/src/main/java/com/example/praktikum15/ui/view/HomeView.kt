@@ -89,36 +89,7 @@ fun CardMhs(
         Column(
             modifier = Modifier.padding(8.dp)
         ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Icon(imageVector = Icons.Filled.Person, contentDescription = "")
-                Spacer(modifier = Modifier.padding(4.dp))
-                Text(
-                    text = mhs.nama,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 20.sp
-                )
-            }
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Icon(imageVector = Icons.Filled.AccountCircle, contentDescription = "")
-                Spacer(modifier = Modifier.padding(4.dp))
-                Text(
-                    text = mhs.nim,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 16.sp
-                )
-                Spacer(modifier = Modifier.padding(4.dp))
-                IconButton(
-                    onClick = { onDeleteClick(mhs.nim) }
-                ) {
-                    Icon(imageVector = Icons.Filled.Delete, contentDescription = "")
-                }
-            }
+            // Existing fields...
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
@@ -127,6 +98,41 @@ fun CardMhs(
                 Spacer(modifier = Modifier.padding(4.dp))
                 Text(
                     text = mhs.kelas,
+                    fontWeight = FontWeight.Bold,
+                )
+            }
+
+            // New fields: Judul Skripsi, DPB1, DPB2
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(imageVector = Icons.Filled.Home, contentDescription = "")
+                Spacer(modifier = Modifier.padding(4.dp))
+                Text(
+                    text = mhs.judulskripsi,
+                    fontWeight = FontWeight.Bold,
+                )
+            }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(imageVector = Icons.Filled.Home, contentDescription = "")
+                Spacer(modifier = Modifier.padding(4.dp))
+                Text(
+                    text = mhs.dpb1,
+                    fontWeight = FontWeight.Bold,
+                )
+            }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(imageVector = Icons.Filled.Home, contentDescription = "")
+                Spacer(modifier = Modifier.padding(4.dp))
+                Text(
+                    text = mhs.dpb2,
                     fontWeight = FontWeight.Bold,
                 )
             }

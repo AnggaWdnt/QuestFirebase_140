@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.praktikum15.ui.view.HomeScreen
 import com.example.praktikum15.ui.view.InsertMhsView
 
 @Composable
@@ -18,13 +19,13 @@ fun PengelolaHalaman(
         startDestination = DestinasiHome.route,
         modifier = Modifier
     ){
-        composable(DestinasiHome.route) {
-            HomeView(
-                navigateToItemEntry = {
-                    navController.navigate(DestinasiInsert.route)
-                }
-            )
-        }
+//        composable(DestinasiHome.route) {
+//            HomeScreen(
+//                navigateToItemEntry = {
+//                    navController.navigate(DestinasiInsert.route)
+//                }
+//            )
+//        }
         composable(DestinasiInsert.route) {
             InsertMhsView(
                 onBack = {navController.popBackStack()},

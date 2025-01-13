@@ -79,6 +79,10 @@ data class FormErrorState(
     val alamat: String? = null,
     val kelas: String? = null,
     val angkatan: String? = null,
+    val judulskripsi: String? = null,
+    val dpb1: String? = null,
+    val dpb2: String? = null
+
 ){
     fun isValid():Boolean{
         return nim == null && nama == null && gender == null
@@ -91,7 +95,10 @@ data class MahasiswaEvent(
     val gender: String = "",
     val alamat: String = "",
     val kelas: String = "",
-    val angkatan: String = ""
+    val angkatan: String = "",
+    val judulskripsi: String = "",
+    val dpb1: String = "",
+    val dpb2: String = "",
 )
 fun MahasiswaEvent.toMhsModel(): Mahasiswa = Mahasiswa(
     nim = nim,
@@ -99,5 +106,8 @@ fun MahasiswaEvent.toMhsModel(): Mahasiswa = Mahasiswa(
     gender = gender,
     alamat = alamat,
     kelas = kelas,
-    angkatan = angkatan
+    angkatan = angkatan,
+    judulskripsi = judulskripsi,
+    dpb1 = dpb1,
+    dpb2 = dpb2
 )
